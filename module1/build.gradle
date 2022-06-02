@@ -8,7 +8,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        if (!isIntegration){
+        if (!isIntegration) {
             applicationId "com.example.module1"
         }
         minSdk 21
@@ -18,11 +18,11 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        sourceSets{
-            main{
-                if (isIntegration){
+        sourceSets {
+            main {
+                if (isIntegration) {
 //                    manifest.srcFile ''
-                }else{
+                } else {
 //                    manifest.srcFile ''
 //                    java.srcDir ''
                 }
@@ -43,6 +43,7 @@ android {
 }
 
 dependencies {
+    annotationProcessor project(':router_annotation_compiler')
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
@@ -50,4 +51,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation project(':base')
 }

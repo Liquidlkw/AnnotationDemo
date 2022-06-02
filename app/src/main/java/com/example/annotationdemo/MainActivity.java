@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.router_annotation.Route;
 
-@Route(path = "/main/houge",Group ="app")
+@Route(path = "/app/main")
 public class MainActivity extends AppCompatActivity {
 
     @Override

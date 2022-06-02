@@ -14,6 +14,6 @@ public class Log {
     }
 
     public void i(String msg){
-        messager.printMessage(Diagnostic.Kind.NOTE,msg);
+        messager.printMessage(Diagnostic.Kind.NOTE,msg+"   LKW" );
     }
 }

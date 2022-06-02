@@ -1,4 +1,4 @@
-package com.example.router_core;
+package com.example.mylibrary;
 
 import org.junit.Test;
 

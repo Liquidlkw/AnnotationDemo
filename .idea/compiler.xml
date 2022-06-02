@@ -21,11 +21,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="AnnotationDemo.annotation" target="11" />
-      <module name="AnnotationDemo.app" target="11" />
-      <module name="AnnotationDemo.base" target="11" />
-      <module name="AnnotationDemo.module1" target="11" />
-      <module name="AnnotationDemo.module2" target="11" />
-      <module name="AnnotationDemo.router_core" target="11" />
+      <module name="AnnotationDemo.app" target="1.8" />
+      <module name="AnnotationDemo.base" target="1.8" />
+      <module name="AnnotationDemo.module1" target="1.8" />
+      <module name="AnnotationDemo.module2" target="1.8" />
+      <module name="AnnotationDemo.mylibrary" target="1.8" />
+      <module name="AnnotationDemo.route_core" target="1.8" />
+      <module name="AnnotationDemo.router_annotation_compiler" target="1.8" />
+      <module name="AnnotationDemo.router_core" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

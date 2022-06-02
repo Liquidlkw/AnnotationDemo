@@ -5,9 +5,6 @@ import com.example.router_annotation.Route;
 import javax.lang.model.element.Element;
 
 public class RouteBean {
-    public RouteBean(Type type, Route route, Element e) {
-        this(type, e, null, route.path(), route.Group());
-    }
 
     public enum Type {
         ACTIVITY, ISERVICE
@@ -18,6 +15,16 @@ public class RouteBean {
     private Class<?> destination;
     private String path;
     private String group;
+
+    public static RouteBean build(Type type, Class<?> destination, String path, String
+            group) {
+        return new RouteBean(type, null, destination, path, group);
+    }
+
+
+    public RouteBean(Type type, Route route, Element e) {
+        this(type, e, null, route.path(), route.Group());
+    }
 
 
     public RouteBean(Type type, Element element, Class<?> destination, String path, String group) {
